@@ -38,22 +38,39 @@ let a = parseInt(prompt ('Введите первое число'));
 let math = prompt('Введите математическое действие');
 let c = parseInt(prompt ('Введите второе число'));
 let result = 0
- if(math == '+'){
-    result == (a+c);
- }
-    else if(math == '-'){
-    result = (a-c); 
+switch(math){
+    case '+':
+        result = a + c;
+        alert(result);
+        break;
+    case '-':
+        result = a - c;
+        alert(result);
+        break;
+    case '*':
+        result = a * c;
+        alert(result);
+        break;
+    case '/':
+        result = a / c;
+        alert(result);
+        break;        
 }
-    else if(math == '*'){
-        result = (a*c); 
-}
-    else if(math == '/'){
-        result = a/c; 
-}
-    else{
-        alert('Введите правильное действие')
-}
-    alert(result)
+//  if(math == '+'){
+//     result == a+c;
+//  }
+//     else if(math == '-'){
+//     result = a-c; 
+// }
+//     else if(math == '*'){
+//         result = a*c; 
+// }
+//     else if(math == '/'){
+//         result = a/c; 
+// }
+//     else{
+//         alert('Введите правильное действие')
+// }
     // console.log(a);
     // console.log(math);
     // console.log(c);
@@ -100,7 +117,10 @@ function changeFarm(arg1, arg2){
     }
     else if(arg2 == 'first'){ 
         newFarm.push(arg1.shift())
-    }    
+    }
+    else{
+        alert('вы ввели неверное значени(last/first)')
+    }
     console.log(newFarm)
 }
 changeFarm(farmArray, choice);
