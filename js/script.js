@@ -38,42 +38,27 @@ let a = parseInt(prompt ('Введите первое число'));
 let math = prompt('Введите математическое действие');
 let c = parseInt(prompt ('Введите второе число'));
 let result = 0
-switch(math){
-    case '+':
-        result = a + c;
-        alert(result);
-        break;
-    case '-':
-        result = a - c;
-        alert(result);
-        break;
-    case '*':
-        result = a * c;
-        alert(result);
-        break;
-    case '/':
-        result = a / c;
-        alert(result);
-        break;        
-}
-//  if(math == '+'){
-//     result == a+c;
-//  }
-//     else if(math == '-'){
-//     result = a-c; 
-// }
-//     else if(math == '*'){
-//         result = a*c; 
-// }
-//     else if(math == '/'){
-//         result = a/c; 
-// }
-//     else{
-//         alert('Введите правильное действие')
-// }
-    // console.log(a);
-    // console.log(math);
-    // console.log(c);
+    switch(math){
+        case '+':
+            result = a + c;
+            alert(result);
+            break;
+        case '-':
+            result = a - c;
+            alert(result);
+            break;
+        case '*':
+            result = a * c;
+            alert(result);
+            break;
+        case '/':
+            result = a / c;
+            alert(result);
+            break;
+        default:
+            alert('Введите правильное действие');        
+    }
+
 }
 calculator()
 
