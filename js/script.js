@@ -12,11 +12,11 @@ console.log(double);
 
 let single = []
 
-function singleNumbers(){
+function singleNumbers(random){
     let singleRandom = []
-    for(let i=0; i<arrRandomNumbers.length; i++){
-        if(arrRandomNumbers[i] < 10){
-            singleRandom.push(arrRandomNumbers[i])
+    for(let i=0; i<random.length; i++){
+        if(random[i] < 10){
+            singleRandom.push(random[i])
         }
     }
     single = singleRandom.sort()
